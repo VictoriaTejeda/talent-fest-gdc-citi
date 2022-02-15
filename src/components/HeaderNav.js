@@ -5,7 +5,7 @@ import { NavUser } from "./NavUser";
 export const HeaderNav = () => {
   const date = new Date();
   return (
-    <header>
+    <header className="header-nav">
       <section className="section-nav">
         <p>{date.toUTCString()}</p>
 
@@ -79,8 +79,8 @@ export const HeaderNav = () => {
         <p className="text-logout">Cerrar sesión</p>
       </section>
       <section className="container-welcome">
-        <h2 className="welcome"> ¡Hola usuario!</h2>
-        <p>último acceso {date.toDateString()}</p>
+        <h1 className="welcome"> ¡Hola usuario!</h1>
+        <p className= "last-access">último acceso {date.toDateString()}</p>
       </section>
       <NavUser/>
     </header>

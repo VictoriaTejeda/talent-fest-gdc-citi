@@ -1,10 +1,14 @@
 import React from "react";
+import { useTransfers } from "../hooks/useTransfers";
 
 export const OfertasHome = () => {
-  return (
+ const { getDataTransfer } = useTransfers();
+ const ownAccounts = getDataTransfer.filter((item) => item.typeAccount=== true);
+
+ return (
     <div className="container-home ">
       <section className="offers-container">
-        <h1>Ofertas Citibanamex</h1>
+        <h2>Ofertas Citibanamex</h2>
 
         <section className="cards-offer-home">
 
@@ -40,24 +44,25 @@ export const OfertasHome = () => {
       </section>
 
       <section className="container-acconts">
-      <h2>Cuentas de efectivo</h2>
-      <section className="acconts-client-home-container">
+      <p>Cuentas de efectivo</p>
+
+      {ownAccounts.map(item=>(
+        <section key={item.id} className="acconts-client-home-container">
         <section className="card-home-container">
           <img
             src="https://www.banamex.com/landings/tarjetas-de-debito/img/desktop/PerfilEjecutivo.png"
             alt="tarjeta banamex perfil ejecutivo"
           />
           <section>
-            <a href="./cualquiercosa">Cuenta perfil ejecutivo-MXN</a>
-            
-            <p className="account-number">**195</p>
+            <a href="./cualquiercosa">{item.name}-MXN</a>
+            <p className="account-number">**{item.displayAccountNumber.slice(-3)}</p>
           </section>
         </section>
 
         <section className="avalaible-container">
           <p>Disponible:</p>
           <section>
-            <p className="balance">10,054.79</p> 
+            <p className="balance">{item.maximumAmount}</p> 
             <p>MXN</p>
           </section>
         </section>
@@ -65,12 +70,13 @@ export const OfertasHome = () => {
         <section className="avalaible-container">
           <p>Saldo:</p>
           <section>
-            <p className="balance">10,054.79</p> 
+            <p className="balance">{item.balance}</p> 
             <p>MXN</p>
           </section>
         </section>
-
       </section>
+      ))}
+
      </section>
 
     </div>

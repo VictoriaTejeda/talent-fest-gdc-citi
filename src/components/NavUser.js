@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 export const NavUser = () => {
     return (
-        <section className="shadow p-3 mb-5 bg-white container-nav-user">
+  
+        <section className="shadow p-3 mb-5 bg-white container-nav-user">  
         <ul className="nav nav-pills nav-fill">
           <li className="nav-item">
           <i className="bi bi-house-door"></i>

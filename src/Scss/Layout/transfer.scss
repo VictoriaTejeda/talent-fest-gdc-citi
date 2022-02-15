@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: -10vw;
+    margin-left: -13vw;
   }
 
   h1 {
@@ -25,6 +25,10 @@
     font-size: 1.3rem;
   }
 
+  .transfer-p{
+    width:80%
+  }
+
   .container {
     margin: 0;
     padding: 0;
@@ -34,6 +38,7 @@
     margin-top: 2vh;
     font-size: 1.3rem;
     margin-bottom: 3vh;
+  
   }
 
   button {
@@ -76,6 +81,7 @@
   }
   .input-group-text{
     font-size: 1.5rem;
+
   }
   .form-control{
     width: 50vh;
@@ -91,6 +97,7 @@
     font-style: italic;
     font-size: 1rem;
     margin-bottom:2vh;
+    
   }
   
 }

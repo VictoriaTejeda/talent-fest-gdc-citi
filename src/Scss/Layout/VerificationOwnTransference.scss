@@ -1,0 +1,53 @@
+
+    .table-container {
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: {
+            top: 1.5rem;
+            bottom: 1rem;
+        };
+        table {
+            width: 80%;
+            margin: {
+                top: 1.50rem;
+            };
+            tr{
+                td{
+                  height: 4rem;
+                  text-align: start;
+                  font: {
+                      size: 20px;
+                  };
+                }
+            }
+        }
+      }
+     
+
+.btns-ver-own{
+button{
+    margin: 0.50rem;
+    font: {
+        weight: 500;
+    }
+    padding: {
+        top: 0.50rem;
+        bottom: 0.50rem;
+        left: 1rem;
+        right: 1rem;
+    }
+    border: {
+        style: none;
+    };
+    background-color: transparent;
+    color: #40698A;
+}
+#aceptar{
+    background-color: #40698A;
+    color: white;
+    
+}
+
+}

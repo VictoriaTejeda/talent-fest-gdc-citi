@@ -10,13 +10,13 @@
     width: 65%;
 
     .nav-link {
-      color: black;
       font-weight: 600;
       font-family: "Interstate", "Interstate_Reg", "Arial", "Verdana",
         "Sans Serif";
       font-size:1.3rem;
       display: flex;
       margin-left: 2vh;
+      color: #366dae;
     }
 
     .nav-link:hover {
@@ -32,6 +32,9 @@
       width: 101%;
     }
 
+    .disabled{
+      color:dimgray;
+    }
     .nav-item{
         margin-left: 2vh;
     }

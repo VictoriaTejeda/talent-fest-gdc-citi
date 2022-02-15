@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+$banamex-blue: #056dae;
+$shadow-gray: #bebaba;
+$size-titles: 20px;
+
+
+.btn-accesibility {
+  border: none;
+  background-color: transparent;
+  width: 8vw;
+  height: 8vw; 
+
+  img {
+    width: 7vw;
+    height: 7vw;
+    position: fixed;
+  }
+}
+
+.modal-sia {
+  top: 24%;
+  left: 30%;
+
+  .modal-content {
+    width: 110%;
+    height: 35vh;
+
+    .modal-header {
+      background-color: $banamex-blue;
+    }
+
+    .modal-body {
+      display: flex;
+      justify-content: space-around;
+
+      .btn-sia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20vh;
+        height: 20vh;
+        color: $banamex-blue;
+        font: {
+          size: 1.2rem;
+          weight: 500;
+        }
+        
+        border: {
+          style: dashed;
+          radius: 2vh;
+          color: $banamex-blue;
+        }
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+#darkmode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20vh;
+  height: 20vh;
+  color: $banamex-blue;
+  font: {
+    size: 1.2rem;
+    weight: 500;
+  }
+  border: {
+    style: dashed;
+    radius: 2vh;
+    color: $banamex-blue;
+  }
+  background-color: transparent;
+}
